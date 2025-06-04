@@ -4,7 +4,7 @@ class script(object):
     
     ABOUT_TXT = """<b>╭────[ ᴍʏ ᴅᴇᴛᴀɪʟs ]────⍟
 ├⍟ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
-├⍟ ᴏᴡɴᴇʀ : <a href={}>ཧᜰ꙰ꦿ➢𝐀𝐛𝔥𝕚ŞℍＥҜ༒</a> 
+├⍟ ᴏᴡɴᴇʀ : <a href={}>doremon</a> 
 ├⍟ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
 ├⍟ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
 ├⍟ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
