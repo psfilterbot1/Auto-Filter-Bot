@@ -15,8 +15,8 @@ def is_enabled(value, default):
 
 
 SESSION = environ.get('SESSION', 'media_search')
-API_ID = int(environ.get('API_ID', '27454854'))
-API_HASH = environ.get('API_HASH', 'f6e80a16e2c46c32d54d49fae7f2eab0')
+API_ID = int(environ.get('API_ID', '16402669'))
+API_HASH = environ.get('API_HASH', 'e50b6c6e9dc8077ec3e9db0e565631e4')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,15 +29,15 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df5266
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/480245c95c53fb7aa32af-45828b92338c540eb8.jpg'))
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split() 
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7288983855').split()]  #Admin Id
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002549213713').split()] #Movie Database Channel Id
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002527150746'))  #Log Channel Id
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002527150746'))  #Streming Log Channel Id
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002608131214'))  #Movie Update Channel Id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002527150746')) #Premium Subscription Log Channel Id
-reqst_channel = environ.get('REQST_CHANNEL_ID', '  -1002677084809') #Movie Request Channel Id
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6570474744 6738893739').split()]  #Admin Id
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002606651053').split()] #Movie Database Channel Id
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002510169540'))  #Log Channel Id
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002510169540'))  #Streming Log Channel Id
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002006400723'))  #Movie Update Channel Id
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002510169540')) #Premium Subscription Log Channel Id
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002302517187') #Movie Request Channel Id
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '  -1002677084809') #Support Chat Id
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002302517187') #Support Chat Id
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mrnoffice692:PsO4VGHI9heKd7WA@cluster0.o1vcj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") #MongoDB Url
@@ -48,18 +48,18 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+sjIjmfzTLyxkMzU9')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+3GN6JNqbP1I4ODk1')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/doremon49868')
-UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/+3GN6JNqbP1I4ODk1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Movies_World_Request_Group_hdx')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MOVIES_WORLDZS')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/AV_King1')
+UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/MOVIES_WORLDZS')
 
 #Force Subscription Channel (Put Same Channel Id In Both Veriables)
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002640119647')) 
-AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002608131214'))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002006400723')) 
+AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002302517187'))
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002527150746')) #Verification Channel Id 
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002527150746')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002510169540')) #Verification Channel Id 
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002510169540')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/dcb8bbfbb1f17c7ae3c29-bc0773c9ddb6b02f5e.jpg")
 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Howtoverifyanylink")
@@ -84,7 +84,7 @@ MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Share & Support Us ♥️')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+T2W2vpB-OY42ZWE1') #Support Chat Link
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+4LbUxZR-F6NmODQ1') #Support Chat Link
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -98,7 +98,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002549213713')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002606651053')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
